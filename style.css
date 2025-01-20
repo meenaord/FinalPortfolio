@@ -1,64 +1,118 @@
 /* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
+    line-height: 1.6;
+    padding: 0;
 }
 
 h1, h2 {
-    text-align: center;
     color: #FFA69E; /* Pink */
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Verdana', sans-serif;
 }
 
 header {
     background-color: #c8d5b9; /* Green */
-    padding: 20px 0;
+    padding: 30px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 main {
-    padding: 20px;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
     background-color: #c8d5b9; /* Green */
     color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Project Buttons */
+.projects {
+    margin-top: 50px;
+}
+
+.projects h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Project Buttons Section */
 .project-buttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 30px;
 }
 
+/* Button Styles */
 .project-btn {
     display: inline-block;
     background-color: #FFA69E; /* Pink */
     color: white;
-    padding: 12px 24px;
     font-size: 18px;
+    padding: 15px 30px;
     text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .project-btn:hover {
     background-color: #FF6F61; /* Slightly darker pink */
+    transform: translateY(-3px); /* Small lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Mobile Styles */
+.project-btn:active {
+    transform: translateY(1px); /* Small pressed effect */
+}
+
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .project-btn {
         font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .project-btn {
+        font-size: 14px;
         padding: 10px 20px;
+    }
+
+    footer {
+        font-size: 10px;
     }
 }
