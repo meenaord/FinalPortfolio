@@ -1,0 +1,64 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #FFA69E; /* Pink */
+}
+
+header {
+    background-color: #c8d5b9; /* Green */
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #c8d5b9; /* Green */
+    color: white;
+}
+
+/* Project Buttons */
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-btn {
+    display: inline-block;
+    background-color: #FFA69E; /* Pink */
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.project-btn:hover {
+    background-color: #FF6F61; /* Slightly darker pink */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .project-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
